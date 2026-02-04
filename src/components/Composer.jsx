@@ -4,10 +4,10 @@ export default function Composer({
   prompt,
   setPrompt,
   onPromptKeyDown,
-  apiUrl,
-  setApiUrl,
-  model,
-  setModel,
+//   apiUrl,
+//   setApiUrl,
+//   model,
+//   setModel,
   send,
   disabled,
 }) {
@@ -21,16 +21,16 @@ export default function Composer({
       />
 
       <div className="controls">
-        <input type="text" value={apiUrl} onChange={(e) => setApiUrl(e.target.value)} />
+        {/* <input type="text" value={apiUrl} onChange={(e) => setApiUrl(e.target.value)} />
         <div className="row">
           <input type="text" value={model} onChange={(e) => setModel(e.target.value)} />
-        </div>
+        </div> */}
 
         <button className="send" onClick={send} disabled={disabled}>
           Send
         </button>
 
-        <div className="hint">Tip: change API URL/model here.</div>
+        {/* <div className="hint">Tip: change API URL/model here.</div> */}
       </div>
     </footer>
   );
